@@ -4,7 +4,7 @@ set -e
 # Installing nvim...
 if ! command -v nvim &> /dev/null; then
     echo "[*] Neovim não encontrado. Baixando e instalando (requer sudo)..."
-    curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
+    curl -LO https://github.com/neovim/neovim/releases/download/stable/nvim-linux-x86_64.tar.gz
     sudo tar -C /opt -xzf nvim-linux64.tar.gz
     sudo ln -sf /opt/nvim-linux64/bin/nvim /usr/local/bin/nvim
     rm nvim-linux64.tar.gz
